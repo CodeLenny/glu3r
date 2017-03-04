@@ -2,6 +2,8 @@ language: node_js
 dist: trusty
 addons:
   apt:
+    sources:
+      - trusty-backports
     packages:
       - imagemagick
       - povray
