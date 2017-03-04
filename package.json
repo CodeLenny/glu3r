@@ -12,6 +12,7 @@
     "@codelenny/stljs": "^0.1.0",
     "bluebird": "^3.5.0",
     "chai": "^3.5.0",
+    "coffee-script": "^1.12.4",
     "image-diff": "^1.6.3",
     "mocha": "^3.2.0",
     "rollup": "^0.41.4",
