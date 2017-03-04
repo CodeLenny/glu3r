@@ -1,0 +1,37 @@
+{
+  "name": "glu3r",
+  "version": "0.0.0",
+  "description": "Creates 3D models by \"gluing\" SVG drawings layer by layer.",
+  "main": "Glu3r.js",
+  "dependencies": {
+    "coffeescript": "^2.0.0-alpha1",
+    "csg": "github:jscad/csg.js#v0.1.0",
+    "openjscad": "github:spiritdude/OpenJSCAD.org#dev"
+  },
+  "devDependencies": {
+    "@codelenny/stljs": "^0.1.5",
+    "bluebird": "^3.5.0",
+    "chai": "^3.5.0",
+    "image-diff": "^1.6.3",
+    "mocha": "^3.2.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-coffee-script": "^1.1.0",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-json": "^2.1.0",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  },
+  "scripts": {
+    "install": "coffee bin/install.coffee",
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeLenny/glu3r.git"
+  },
+  "author": "Ryan Leonard (http://ryanleonard.us)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeLenny/glu3r/issues"
+  },
+  "homepage": "https://github.com/CodeLenny/glu3r#readme"
+}
