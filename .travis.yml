@@ -7,6 +7,7 @@ addons:
     packages:
       - imagemagick
       - povray
+      - povray-includes
 node_js:
   - node
   - 6
