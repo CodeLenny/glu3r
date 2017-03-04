@@ -25,6 +25,7 @@ describe "SVG2CSG", ->
         out.should.have.property "sides"
 
   it "should produce extrudable objects", ->
+    @timeout 4000
     SVG2CSG shape
       .then (out) ->
         out.extrude {offset: [0, 0, 10]}
