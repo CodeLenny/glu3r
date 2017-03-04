@@ -1,5 +1,10 @@
 language: node_js
 dist: trusty
+addons:
+  apt:
+    packages:
+      - imagemagick
+      - povray
 node_js:
   - node
   - 6

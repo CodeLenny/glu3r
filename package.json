@@ -9,7 +9,7 @@
     "openjscad": "github:spiritdude/OpenJSCAD.org#dev"
   },
   "devDependencies": {
-    "@codelenny/stljs": "^0.1.5",
+    "@codelenny/stljs": "^0.1.0",
     "bluebird": "^3.5.0",
     "chai": "^3.5.0",
     "image-diff": "^1.6.3",
