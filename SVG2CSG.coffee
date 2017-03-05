@@ -1,6 +1,13 @@
+sax = require "sax"
 jscad = require "openjscad"
 
 import {parseSVG} from "openjscad/src/io/parsers/parseSVG"
+
+units =
+  px2mm: sax.SAXParser::pxPmm
+  inch2mm: sax.SAXParser::inchMM
+  pt2mm: sax.SAXParser::ptMM
+  pc2mm: sax.SAXParser::pcMM
 
 ###*
 Converts SVG source files into CSG objects for use in openjscad.
@@ -15,4 +22,4 @@ SVG2CSG = (svg, opts={}) ->
     .compile parseSVG(svg, opts.path), opts.params
     .then (res) -> res[0]
 
-module.exports = {parseSVG, SVG2CSG}
+module.exports = {parseSVG, units, SVG2CSG}

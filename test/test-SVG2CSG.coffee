@@ -7,7 +7,7 @@ stljs = Promise.promisifyAll require "@codelenny/stljs"
 jscad = require "openjscad"
 golden = require "./golden"
 
-{SVG2CSG} = require "../SVG2CSG.js"
+{units, SVG2CSG} = require "../SVG2CSG.js"
 
 describe "SVG2CSG", ->
 
@@ -36,3 +36,12 @@ describe "SVG2CSG", ->
           {width: 400, height: 400, dst: "test/out/shape-extruded.png"}
       .then ->
         golden.img "shape-extruded.png"
+
+  it "should provide unit conversions", ->
+    units.should.be.an.object
+    units.should.have.property "px2mm"
+    units.px2mm.should.be.a.number
+    units.px2mm.should.be.within 1, 5
+    units.should.have.property "inch2mm"
+    units.should.have.property "pt2mm"
+    units.should.have.property "pc2mm"
