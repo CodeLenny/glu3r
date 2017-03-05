@@ -48,6 +48,7 @@ describe "Glu3ing <path>", ->
           [cube, model] = []
 
           before ->
+            @timeout 5000
             new Glu3r({file: svg, height: 2, resolution: 0.5})
               .glue()
               .then (c) ->
