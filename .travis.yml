@@ -8,6 +8,7 @@ addons:
       - imagemagick
       - povray
       - povray-includes
+      - admesh
 node_js:
   - node
   - 6
